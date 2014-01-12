@@ -56,13 +56,20 @@
         android:onClick="test_primality"
         android:text="@string/button_test" />
 
-    <TextView
-        android:id="@+id/instructions"
+    <ScrollView
+        android:id="@+id/scroll_instructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/input_label"
-        android:layout_below="@+id/test_button"
-        android:layout_marginTop="22dp"
-        android:text="@string/instructions" />
+        android:layout_alignLeft="@id/input_label"
+        android:layout_below="@id/test_button"
+        android:layout_marginTop="16dp" >
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:textSize="22sp" />
+    </ScrollView>
 
 </RelativeLayout>
