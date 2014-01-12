@@ -7,5 +7,6 @@
     <string name="button_test">Test primality&#8230;</string>
     <string name="instructions">This program takes as input one positive integer and determines if the number given as input is a prime number or not.\n\nRemember that a positive integer n is said to be prime if (and only if) its only positive divisors are 1 and n.\n\nThe algorithm used for the primality test is the simplest possible: a brute-force trial division.</string>
     <string name="output_label">Output:</string>
+    <string name="input_placeholder">Type an integer&#8230;</string>
 
 </resources>
