@@ -1,0 +1,11 @@
+*.class
+*.dex
+*.jar
+*~
+bin/
+build/
+gen/
+libs/
+local.properties
+proguard/
+lint.xml
