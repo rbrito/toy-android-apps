@@ -29,9 +29,9 @@ public class PrimeTest extends Activity {
 		try {
 			int n = Integer.parseInt(input_text);
 
-			update_output(test_prime(n));
+			update_output(test_prime(n), n, false);
 		} catch (NumberFormatException e) {
-			update_output(false);
+			update_output(false, 0, true);
 		}
 	}
 
@@ -53,8 +53,13 @@ public class PrimeTest extends Activity {
 		return true;
 	}
 
-	public void update_output(boolean veredict) {
-		String msg = "Is " + (veredict ? "" : "not ") + "prime.";
+	public void update_output(boolean veredict, int n, boolean via_exception) {
+		String msg;
+		if (via_exception) {
+			msg = "The input is not an integer.";
+		} else {
+			msg = n + " is " + (veredict ? "" : "not ") + "prime.";
+		}
 		final TextView output = (TextView) findViewById(R.id.output);
 		output.setText(msg);
 	}
