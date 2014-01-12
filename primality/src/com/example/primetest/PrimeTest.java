@@ -27,7 +27,7 @@ public class PrimeTest extends Activity {
 		String input_text = t.getText().toString();
 
 		try {
-			int n = Integer.parseInt(input_text);
+			long n = Long.parseLong(input_text);
 
 			update_output(test_prime(n), n, false);
 		} catch (NumberFormatException e) {
@@ -35,7 +35,7 @@ public class PrimeTest extends Activity {
 		}
 	}
 
-	public boolean test_prime(int n) {
+	public boolean test_prime(long n) {
 		if (n <= 1)
 			return false;
 		if (n == 2)
@@ -43,7 +43,7 @@ public class PrimeTest extends Activity {
 		if (n % 2 == 0)
 			return false;
 
-		int i = 3;
+		long i = 3;
 		while (i * i <= n) {
 			if (n % i == 0)
 				return false;
@@ -53,7 +53,7 @@ public class PrimeTest extends Activity {
 		return true;
 	}
 
-	public void update_output(boolean veredict, int n, boolean via_exception) {
+	public void update_output(boolean veredict, long n, boolean via_exception) {
 		String msg;
 		if (via_exception) {
 			msg = "The input is not an integer.";
