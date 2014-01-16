@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/output_label"
-        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_toRightOf="@id/output_label"
         android:minEms="10"
         android:textSize="22sp" />
