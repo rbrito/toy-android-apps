@@ -38,16 +38,18 @@ public class PrimeTest extends Activity {
 	public boolean test_prime(long n) {
 		if (n <= 1)
 			return false;
-		if (n == 2)
+		if (n == 2 || n == 3)
 			return true;
-		if (n % 2 == 0)
+		if (n % 2 == 0 || n % 3 == 0)
 			return false;
 
-		long i = 3;
+		long i = 5;
+		int step = 2;
 		while (i * i <= n) {
 			if (n % i == 0)
 				return false;
-			i += 2;
+			step = 6 - step;
+			i += step;
 		}
 
 		return true;
