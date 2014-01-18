@@ -35,9 +35,9 @@
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/input"
-        android:layout_below="@id/input"
+        android:layout_alignBaseline="@id/test_button"
         android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/test_button"
         android:hint="@string/output_placeholder"
         android:minEms="10"
         android:textSize="18sp" />
