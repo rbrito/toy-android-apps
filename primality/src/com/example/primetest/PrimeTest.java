@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class PrimeTest extends Activity {
 
