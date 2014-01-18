@@ -13,7 +13,7 @@
         android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_marginLeft="8dp"
         android:hint="@string/input_placeholder"
         android:inputType="number" >
 
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/input"
         android:layout_below="@id/input"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="8dp"
         android:hint="@string/output_placeholder"
         android:minEms="10"
         android:textSize="18sp" />
