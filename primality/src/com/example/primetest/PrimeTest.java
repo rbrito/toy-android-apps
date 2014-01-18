@@ -62,7 +62,7 @@ public class PrimeTest extends Activity {
 		} else {
 			msg = n + " is " + (veredict ? "" : "not ") + "prime.";
 		}
-		final TextView output = (TextView) findViewById(R.id.output);
+		final EditText output = (EditText) findViewById(R.id.input);
 		output.setText(msg);
 	}
 
