@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:hint="@string/input_placeholder"
-        android:inputType="number" >
+        android:inputType="number"
+        android:minHeight="48dp" >
 
         <requestFocus />
     </EditText>
