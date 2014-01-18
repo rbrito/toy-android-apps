@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Prime Test</string>
+    <string name="app_name">Primality Test</string>
     <string name="action_settings">Settings</string>
     <string name="button_test">Test primality</string>
     <string name="instructions">This program takes as input one positive integer and determines if the number given as input is a prime number or not.\n\nRemember that a positive integer n is said to be prime if (and only if) its only positive divisors are 1 and n.\n\nFor example, the numbers 1, 4, 9, 10, 111, and 12345 are not prime. On the other hand, the numbers 2, 3, 5, 17, 104729, and 982451653 are primes (the last one is, by the way, the fiftieth million prime).\n\nThe algorithm used for the primality test is the simplest possible: a brute-force trial division.</string>
