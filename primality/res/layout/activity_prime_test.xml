@@ -37,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/input"
         android:layout_below="@id/input"
+        android:layout_marginLeft="10dp"
         android:hint="@string/output_placeholder"
         android:minEms="10"
         android:textSize="18sp" />
