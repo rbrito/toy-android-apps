@@ -31,17 +31,6 @@
         android:onClick="test_primality"
         android:text="@string/button_test" />
 
-    <TextView
-        android:id="@+id/output"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/test_button"
-        android:layout_marginLeft="8dp"
-        android:layout_toRightOf="@id/test_button"
-        android:hint="@string/output_placeholder"
-        android:minEms="10"
-        android:textSize="18sp" />
-
     <ScrollView
         android:id="@+id/scroll_instructions"
         android:layout_width="fill_parent"
