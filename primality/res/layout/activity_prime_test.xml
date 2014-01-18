@@ -16,6 +16,7 @@
         android:layout_marginLeft="8dp"
         android:hint="@string/input_placeholder"
         android:inputType="number"
+        android:minEms="10"
         android:minHeight="48dp" >
 
         <requestFocus />
