@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,39 +9,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".PrimeTest" >
 
-    <TextView
-        android:id="@+id/input_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/input_label"
-        android:textSize="22sp" />
-
-    <TextView
-        android:id="@+id/output_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/input_label"
-        android:layout_below="@id/input_label"
-        android:text="@string/output_label"
-        android:textSize="22sp" />
-
-    <TextView
-        android:id="@+id/output"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/output_label"
-        android:layout_marginLeft="32dp"
-        android:layout_toRightOf="@id/output_label"
-        android:minEms="10"
-        android:textSize="22sp" />
-
     <EditText
         android:id="@+id/input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/input_label"
-        android:layout_alignLeft="@id/output"
+        android:layout_margin="16dp"
         android:hint="@string/input_placeholder"
         android:inputType="number" >
 
@@ -51,25 +24,37 @@
         android:id="@+id/test_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/output_label"
+        android:layout_alignBaseline="@id/input"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/input"
         android:onClick="test_primality"
         android:text="@string/button_test" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/input"
+        android:layout_below="@id/input"
+        android:hint="@string/output_placeholder"
+        android:minEms="10"
+        android:textSize="18sp" />
 
     <ScrollView
         android:id="@+id/scroll_instructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/input_label"
-        android:layout_below="@id/test_button"
-        android:layout_marginTop="16dp" >
+        android:layout_below="@id/output" >
 
         <TextView
             android:id="@+id/instructions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="8dp"
             android:text="@string/instructions"
-            android:textSize="22sp" />
+            android:textSize="18sp" />
     </ScrollView>
 
 </RelativeLayout>
