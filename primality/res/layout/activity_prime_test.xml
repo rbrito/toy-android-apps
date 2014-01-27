@@ -48,4 +48,14 @@
             android:textSize="18sp" />
     </ScrollView>
 
+        <Button
+            android:id="@+id/learn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/scroll_instructions"
+            android:layout_below="@id/scroll_instructions"
+            android:layout_margin="8dp"
+            android:onClick="learn_more"
+            android:text="@string/learn_more" />
+
 </RelativeLayout>

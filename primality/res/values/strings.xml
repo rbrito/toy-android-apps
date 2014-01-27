@@ -7,5 +7,6 @@
     <string name="instructions">This program takes as input one positive integer and determines if the number given as input is a prime number or not.\n\nRemember that a positive integer n is said to be prime if (and only if) its only positive divisors are 1 and n.\n\nFor example, the numbers 1, 4, 9, 10, 111, and 12345 are not prime. On the other hand, the numbers 2, 3, 5, 17, 104729, and 982451653 are primes (the last one is, by the way, the fiftieth million prime).\n\nThe algorithm used for the primality test is the simplest possible: a brute-force trial division.</string>
     <string name="input_placeholder">Type an integer&#8230;</string>
     <string name="output_placeholder">Result of test&#8230;</string>
+    <string name="learn_more">Learn more&#8230;</string>
 
 </resources>
