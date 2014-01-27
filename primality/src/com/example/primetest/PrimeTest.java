@@ -1,7 +1,9 @@
 package com.example.primetest;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -63,6 +65,14 @@ public class PrimeTest extends Activity {
 		}
 		final EditText output = (EditText) findViewById(R.id.input);
 		output.setText(msg);
+	}
+
+	public void learn_more(View v) {
+		String url = "http://primes.utm.edu/";
+		Intent i = new Intent(Intent.ACTION_VIEW);
+		i.setData(Uri.parse(url));
+		startActivity(i);
+
 	}
 
 }
