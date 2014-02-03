@@ -57,7 +57,7 @@ public class PrimeTest extends Activity {
 	public void update_output(boolean veredict, long n, boolean via_exception) {
 		String msg;
 		if (via_exception) {
-			msg = "The input is not an integer.";
+			msg = getString(R.string.input_not_integer);
 		} else {
 			msg = n + " is " + (veredict ? "" : "not ") + "prime.";
 		}
