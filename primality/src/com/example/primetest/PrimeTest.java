@@ -68,11 +68,9 @@ public class PrimeTest extends Activity {
 	}
 
 	public void learn_more(View v) {
-		String url = PRIME_PAGES_URL;
 		Intent i = new Intent(Intent.ACTION_VIEW);
-		i.setData(Uri.parse(url));
+		i.setData(Uri.parse(PRIME_PAGES_URL));
 		startActivity(i);
-
 	}
 
 }
