@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class PrimeTest extends Activity {
 
@@ -63,8 +64,7 @@ public class PrimeTest extends Activity {
 		} else {
 			msg = n + " is " + (veredict ? "" : "not ") + "prime.";
 		}
-		final EditText output = (EditText) findViewById(R.id.input);
-		output.setText(msg);
+		Toast.makeText(this.getApplicationContext(), msg, Toast.LENGTH_LONG).show();
 	}
 
 	public void learn_more(View v) {
