@@ -10,6 +10,8 @@ import android.widget.EditText;
 
 public class PrimeTest extends Activity {
 
+	private static final String PRIME_PAGES_URL = "http://primes.utm.edu/";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -66,7 +68,7 @@ public class PrimeTest extends Activity {
 	}
 
 	public void learn_more(View v) {
-		String url = "http://primes.utm.edu/";
+		String url = PRIME_PAGES_URL;
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setData(Uri.parse(url));
 		startActivity(i);
