@@ -8,5 +8,7 @@
     <string name="input_placeholder">Type an integer&#8230;</string>
     <string name="learn_more">Learn more&#8230;</string>
     <string name="input_not_integer">The input is not an integer.</string>
+    <string name="is_prime">"%d is prime."</string>
+    <string name="is_not_prime">"%d is not prime."</string>
 
 </resources>

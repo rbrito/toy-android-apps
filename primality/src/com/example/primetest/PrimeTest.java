@@ -62,7 +62,8 @@ public class PrimeTest extends Activity {
 		if (via_exception) {
 			msg = getString(R.string.input_not_integer);
 		} else {
-			msg = n + " is " + (veredict ? "" : "not ") + "prime.";
+			msg = getString(veredict ? R.string.is_prime : R.string.is_not_prime);
+			msg = String.format(msg, n);
 		}
 		Toast.makeText(this.getApplicationContext(), msg, Toast.LENGTH_LONG).show();
 	}
